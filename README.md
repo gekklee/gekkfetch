@@ -17,7 +17,9 @@ A fork of [newfetch](https://github.com/atrexian/newfetch) - A sleek, minimalist
 
 ### 📥 Arch Linux (AUR)
 
-Coming Soon
+```bash
+yay -S gekkfetch-git
+```
 
 ### 🧪 Manual (Any Distro)
 ```bash
