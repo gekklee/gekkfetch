@@ -1,12 +1,17 @@
-CC = gcc
-CFLAGS = -Wall -Wextra -O2
-TARGET = gekkfetch
-SRC = gekkfetch.c
+CFLAGS ?= -Wall -Wextra -O2
+PREFIX ?= /usr
+BIN = gekkfetch
 
-all: $(TARGET)
+all: $(BIN)
 
-$(TARGET): $(SRC)
-	$(CC) $(CFLAGS) -o $(TARGET) $(SRC)
+$(BIN): $(BIN).c
+	$(CC) $(CFLAGS) -o $(BIN) $(BIN).c
+
+install: $(BIN)
+	install -Dm755 $(BIN) "$(DESTDIR)$(PREFIX)/bin/$(BIN)"
+
+uninstall:
+	rm -f "$(DESTDIR)$(PREFIX)/bin/$(BIN)"
 
 clean:
-	rm -f $(TARGET)
+	rm -f $(BIN)
