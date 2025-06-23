@@ -52,8 +52,8 @@ For all other distros, Gekkfetch will gracefully fall back to the classic **Tux*
 
 ### 📄 License
 
-This is a modified version of [newfetch](https://github.com/atrexian/newfetch) created by [atrexian](https://github.com/atrexian)
-
 **GNU General Public License v3.0**
 
 See [LICENSE](https://github.com/gekklee/gekkfetch/blob/main/LICENSE) for full details.
+
+This is a modified version of [newfetch](https://github.com/atrexian/newfetch) created by [atrexian](https://github.com/atrexian)
