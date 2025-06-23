@@ -211,12 +211,16 @@ int main() {
     snprintf(info[3], sizeof(info[3]), "%sKernel:%s %s %s", text_color, RESET, uts.sysname, uts.release);
     snprintf(info[4], sizeof(info[4]), "%sArch:%s %s", text_color, RESET, uts.machine);
 
-    FILE *uptime_fp = fopen("/proc/uptime", "r");
-    double uptime_seconds = 0;
-    if (uptime_fp) {
-        fscanf(uptime_fp, "%lf", &uptime_seconds);
-        fclose(uptime_fp);
+FILE *uptime_fp = fopen("/proc/uptime", "r");
+double uptime_seconds = 0;
+if (uptime_fp) {
+    if (fscanf(uptime_fp, "%lf", &uptime_seconds) != 1) {
+        fprintf(stderr, "Failed to read uptime\n");
+        uptime_seconds = 0;
     }
+    fclose(uptime_fp);
+}
+
     int days = uptime_seconds / 86400;
     int hours = ((int)uptime_seconds % 86400) / 3600;
     int minutes = ((int)uptime_seconds % 3600) / 60;
