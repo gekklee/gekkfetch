@@ -1,6 +1,6 @@
 # 🚀 Gekkfetch
 
-Forked from [newfetch](https://github.com/atrexian/newfetch) A sleek, minimalist system info tool written in C — **fast** and **simple**.
+A fork of [newfetch](https://github.com/atrexian/newfetch) - A sleek, minimalist system info tool written in C — **fast** and **simple**.
 
 ---
 
