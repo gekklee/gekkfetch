@@ -5,6 +5,18 @@
 #include <string.h>
 #include <pwd.h>
 
+#include "ascii/arch.h"
+#include "ascii/debian.h"
+#include "ascii/endeavouros.h"
+#include "ascii/ubuntu.h"
+#include "ascii/fedora.h"
+#include "ascii/manjaro.h"
+#include "ascii/gentoo.h"
+#include "ascii/linuxmint.h"
+#include "ascii/opensuse.h"
+#include "ascii/void.h"
+#include "ascii/tux.h"
+
 #define RESET "\033[0m"
 #define RED "\033[1;31m"
 #define GREEN "\033[1;32m"
@@ -16,120 +28,6 @@
 #define TEAL "\033[1;38;5;30m"
 #define LIME "\033[1;38;5;118m"
 #define MINT "\033[1;38;5;48m"
-
-const char *arch_logo[] = {
-    "         /\\        ",
-    "        /  \\       ",
-    "       /\\   \\     ",
-    "      /      \\     ",
-    "     /   ,,   \\    ",
-    "    /   |  |  -\\   ",
-    "   /_-''    ''-_\\  "
-};
-
-const char *debian_logo[] = {
-    "                  ",
-    "      _____       ",
-    "     /  __ \\     ",
-    "    |  /    |     ",
-    "    |  \\___-     ",
-    "    -_            ",
-    "      --_         ",
-    "                  "
-};
-
-const char *endeavouros_logo[] = {
-    "        __        ",
-    "      /    \\      ",
-    "     /      )_     ",
-    "    /      _) )    ",
-    "   (     _)_) /    ",
-    "    \\  _)_)_/     ",
-    "     \\      /     ",
-    "      \\____/      "
-};
-
-const char *ubuntu_logo[] = {
-    "                  ",
-    "         _        ",
-    "        ---(_)    ",
-    "    _/  ---  \\   ",
-    "   (_) |   |      ",
-    "     \\  --- _/   ",
-    "        ---(_)    ",
-    "                  "
-};
-
-const char *fedora_logo[] = {
-    "        _____     ",
-    "       /   __)\\  ",
-    "       |  /  \\ \\",
-    "    ___|  |__/ /  ",
-    "   / (_    _)_/   ",
-    "  / /  |  |       ",
-    "  \\ \\__/  |     ",
-    "   \\(_____/      "
-};
-
-const char *manjaro_logo[] = {
-    "  ||||||||| ||||  ",
-    "  ||||||||| ||||  ",
-    "  ||||      ||||  ",
-    "  |||| |||| ||||  ",
-    "  |||| |||| ||||  ",
-    "  |||| |||| ||||  ",
-    "  |||| |||| ||||  "
-};
-
-const char *gentoo_logo[] = {
-    "     _-----_      ",
-    "    (       \\    ",
-    "    \\    0   \\  ",
-    "     \\        )  ",
-    "     /      _/    ",
-    "    (     _-      ",
-    "    \\____-       "
-};
-
-const char *linuxmint_logo[] = {
-    "  ___________     ",
-    "  |_          \\  ",
-    "    | | _____ |   ",
-    "    | | | | | |   ",
-    "    | | | | | |   ",
-    "    | \\_____/ |  ",
-    "    \\_________/  "
-};
-
-const char *opensuse_logo[] = {
-    "    _______       ",
-    "    __|   __ \\   ",
-    "         / .\\ \\ ",
-    "         \\__/ |  ",
-    "       _______|   ",
-    "       \\_______  ",
-    "    __________/   "
-};
-
-const char *void_logo[] = {
-    "      _______     ",
-    "   _ \\______ -   ",
-    "  | \\  ___  \\ | ",
-    "  | | /   \\ | |  ",
-    "  | | \\___/ | |  ",
-    "  | \\______ \\_| ",
-    "   -_______\\     "
-};
-
-const char *tux_logo[] = {
-    "        .--.      ",
-    "       |o_o |     ",
-    "       |:_/ |     ",
-    "      //   \\ \\  ",
-    "     (|     | )   ",
-    "    /'\\_   _/`\\ ",
-    "    \\___)=(___/  "
-};
 
 typedef struct {
     const char *name;
