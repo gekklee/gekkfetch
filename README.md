@@ -1,27 +1,27 @@
-# 🚀 Gekkfetch
+# Gekkfetch
 
 A fork of [newfetch](https://github.com/atrexian/newfetch) - A sleek, minimalist system info tool written in C — **fast** and **simple**.
 
 ---
 
-## ✨ Features
+## Features
 
-- 🧠 Shows essential system info (User, Host, Distro, Kernel, Arch, Uptime, CPU and RAM)
-- 🎨 Colorful output with ASCII art and themed palettes
-- 🪶 Lightweight with zero runtime dependencies
-- 🧩 Modular codebase and simple build process
+- Shows essential system info (User, Host, Distro, Kernel, Arch, Uptime, CPU and RAM)
+- Colorful output with ASCII art and themed palettes
+- Lightweight with zero runtime dependencies
+- Modular codebase and simple build process
 
 ---
 
-## 📦 Installation
+## Installation
 
-### 📥 Arch Linux (AUR)
+### Arch Linux (AUR)
 
 ```bash
 yay -S gekkfetch-git
 ```
 
-### 🧪 Manual (Any Distro)
+### Manual (Any Distro)
 ```bash
 git clone https://github.com/gekklee/gekkfetch.git
 cd gekkfetch
@@ -31,7 +31,7 @@ sudo mv gekkfetch /usr/local/bin/
 
 ---
 
-## 💻 Supported Distributions
+## Supported Distributions
 
 Gekkfetch runs on **any Linux distribution** — it’s written in pure C, fast, and portable.
 
@@ -48,11 +48,11 @@ However, only the following distros have dedicated ASCII logos included in the s
     - Linux Mint
 - Void
 
-For all other distros, Gekkfetch will gracefully fall back to the classic **Tux** logo 🐧.
+For all other distros, Gekkfetch will gracefully fall back to the classic **Tux** logo.
 
 ---
 
-### 📄 License
+### License
 
 **GNU General Public License v3.0**
 
