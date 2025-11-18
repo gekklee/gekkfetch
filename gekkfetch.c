@@ -6,6 +6,7 @@
 #include <pwd.h>
 
 #include "ascii/arch.h"
+#include "ascii/cachy.h"
 #include "ascii/debian.h"
 #include "ascii/endeavouros.h"
 #include "ascii/ubuntu.h"
@@ -47,7 +48,8 @@ const DistroInfo distros[] = {
     { "linux mint",linuxmint_logo,   sizeof(linuxmint_logo)/sizeof(linuxmint_logo[0]),     LIME, LIME },
     { "opensuse",  opensuse_logo,    sizeof(opensuse_logo)/sizeof(opensuse_logo[0]),       LIME,  LIME },
     { "void",      void_logo,        sizeof(void_logo)/sizeof(void_logo[0]),               MINT,  MINT },
-    { "endeavour", endeavouros_logo, sizeof(endeavouros_logo)/sizeof(endeavouros_logo[0]), MAGENTA, CYAN }
+    { "endeavour", endeavouros_logo, sizeof(endeavouros_logo)/sizeof(endeavouros_logo[0]), MAGENTA, CYAN },
+    { "cachy",     cachy_logo,       sizeof(cachy_logo)/sizeof(cachy_logo[0]),             CYAN, TEAL }
 };
 
 const DistroInfo* find_distro_info(const char *distro_name) {
